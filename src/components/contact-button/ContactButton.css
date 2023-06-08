@@ -1,0 +1,20 @@
+.contact-button {
+    background: #00C1C1;
+    box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+  }
+  
+  .contact-button a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    margin: 0 !important;
+    display: grid;
+    place-items: center;
+    transition: 0.3s;
+    color: #fff !important;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+  }

@@ -1,0 +1,58 @@
+.card {
+	width: 323px;
+	min-width: 250px;
+	/* height: 352px; */
+	height: 380px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+	border-radius: 12px;
+}
+
+.card-color {
+	height: 12px;
+	border-top-left-radius: 12px;
+	background: #10338C;
+	border-top-right-radius: 12px;
+}
+
+.card-content {
+	padding: 20px 30px;
+	display: flex;
+	/* align-items: center; */
+	flex-direction: column;
+}
+
+.card-title {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 34px;
+	letter-spacing: 0.3px;
+	color: #10338C;
+	margin-top: 7px;
+	margin-bottom: 0;
+	/* text-align: center; */
+}
+
+.card-description {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 180%;
+	color: #747578;
+	width: auto;
+	/* text-align: center; */
+}
+
+.card-learnmore {
+	color: #00C1C1;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.card img {
+	width: 45px;
+	height: 45px;
+}

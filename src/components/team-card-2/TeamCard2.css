@@ -1,0 +1,218 @@
+.pro-pic {
+  background-image: url("./persona2(1).jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 250px;
+  height: 386px;
+  border-radius: 24px 40px 24px 80px;
+}
+.column{
+	flex: 0 0 40%;
+}
+
+.team-card{
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 386px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* sombra de la tarjeta */
+  border-radius: 24px 40px 24px 80px;
+  z-index: 1;
+	min-height: 100%;
+	position: relative;
+	background:#fff;
+	/* transition: all 0.3s ease-out; */
+}
+
+.team-card .desciption-wrap{
+	padding:70px 6px;
+	position: relative;
+	overflow:hidden;
+}
+.team-card .description{
+	text-align: start;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	/* transition: all 0.5s ease-out; */
+	overflow-x: auto;
+	transform:translateY(100%);
+	opacity: 0;
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 166%;
+	color: #747578;
+}
+.team-card .description > *{
+	width: 100%;
+}
+.team-card .description h3{
+	margin: 0;
+	font-size: 16px;
+}
+.team-card .description h4{
+	margin: 0;
+}
+
+.team-card .description ul{
+	padding-left: 29px;
+}
+
+.team-member-contact {
+	font-size: 24px;
+	display: flex;
+	gap: 20px;
+}
+
+/* .team-card .description ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.team-card .description ul li{
+	display: inline-block;
+	width: 40px;
+	margin: 0 10px;
+	transition: all 0.3s ease-out;
+	transform: perspective(1000px)
+	rotateX(0deg);
+}
+.team-card .description ul li:hover{
+	transform: perspective(1000px)
+	rotateX(30deg);
+	transform-style: preserve-3d;
+}
+.team-card .description ul li img{
+	max-width: 100%;
+} */
+
+.pro-pic{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateX(-50%);
+	background-size: cover;
+	background-position: center center;
+	/* transition: all 0.5s ease-out; */
+}
+.team-card:hover .pro-pic{
+	transform:translate(-50%,-50%);
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-position: inherit;
+}
+
+.team-card:hover .description{
+	transform:translateY(0%);
+	opacity: 1;
+}
+
+
+/* .pro-pic {
+  background-image: url("./persona1.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 250px;
+  height: 386px;
+  border-radius: 24px 40px 24px 80px;
+}
+.column{
+	flex: 0 0 40%;
+}
+
+.card{
+	min-height: 100%;
+	position: relative;
+	background:#fff;
+	transition: all 0.3s ease-out;
+  width: 250px;
+  height: 386px;
+  border-radius: 24px 40px 24px 80px;
+}
+.card .desciption-wrap{
+	padding:105px 30px;
+	position: relative;
+	overflow:hidden;
+}
+.card .description{
+	color: #00C1C1;
+	text-align: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	font-size: 12px;
+	line-height: 1.4;
+	transition: all 0.5s ease-out;
+	overflow-x: auto;
+	transform:translateY(100%);
+	opacity: 0;
+}
+.card .description > *{
+	width: 100%;
+}
+.card .description h3{
+	margin: 0;
+	font-size: 16px;
+}
+.card .description h4{
+	margin: 0;
+}
+.card .description ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.card .description ul li{
+	display: inline-block;
+	width: 40px;
+	margin: 0 10px;
+	transition: all 0.3s ease-out;
+	transform: perspective(1000px)
+	rotateX(0deg);
+}
+.card .description ul li:hover{
+	transform: perspective(1000px)
+	rotateX(30deg);
+	transform-style: preserve-3d;
+}
+.card .description ul li img{
+	max-width: 100%;
+}
+
+.pro-pic{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateX(-50%);
+	background-size: cover;
+	background-position: center center;
+	transition: all 0.5s ease-out;
+}
+.card:hover .pro-pic{
+	transform:translate(-50%,-50%);
+	width: 150px;
+	height: 150px;
+	border-radius: 50%
+}
+.card:hover{
+	border-radius: 50px;
+}
+.card:hover .description{
+	transform:translateY(0%);
+	opacity: 1;
+}
+ */
+

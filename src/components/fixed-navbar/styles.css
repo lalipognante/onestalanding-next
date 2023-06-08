@@ -1,0 +1,258 @@
+body {
+  color: #4c4b5b;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+a {
+  cursor: pointer;
+  transition: 0.5s;
+  color: inherit;
+  font-weight: 600;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  transition: background .6s ease;
+  z-index: 100;
+}
+.new-container {
+  width: 90%;
+  max-width: 1120px;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 23.5px 0;
+}
+
+nav.fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 72px;
+  padding-top: 10vh;
+}
+
+nav.fixed img {
+  width: 239px;
+  height: 50px;
+}
+
+header .navbar__links > .active-fixed {
+  border-bottom: 2px solid #fff;
+}
+
+.mobile-menu-items .active-fixed {
+  color: #10338C !important;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  /* margin-right: 20px; */
+  margin: auto;
+}
+
+.navbar__links  a {
+  text-decoration: none;
+  color: #fff;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  /* transition: 1.25s; */
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* .navbar__links  a:hover {
+  color: #6b63ff;
+} */
+
+header .navbar__logo img {
+  height:42px;
+ }
+
+ header .navbar__links > * {
+  color:#fff;
+  padding-bottom: 5px;
+  padding-top: 5px;
+ }
+
+ /* header .navbar__links>*:hover {
+  text-decoration:none;
+  border-bottom:2px solid #ff5023
+ }
+
+ header .navbar__links>*.active-page {
+  border-bottom:2px solid #ff5023
+ } */
+
+ header .navbar__buttons {
+  display:flex;
+  margin-left:auto;
+ }
+ 
+ header .navbar__buttons>* {
+  margin-left: auto;
+ }
+
+h2 {
+  font-size: 20px;
+  margin: 0 0 4px;
+  cursor: default;
+}
+
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+/* Agrega el ícono del menú desplegable */
+.mobile-menu-icon-fixed { /* Oculta el ícono en pantallas no móviles */
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilo para el menú desplegable en modo móvil */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu a {
+  display: block;
+  margin-bottom: 16px;
+  color: #4c4b5b;
+  text-decoration: none;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* .mobile-menu-icon-fixed i:hover {
+  color: #6b63ff;
+} */
+
+/* Oculta el menú principal en modo móvil */
+@media (max-width: 1100px) {
+  .navbar__links {
+    display: none;
+  }
+
+  header .navbar__buttons {
+    display: none;
+  }
+
+  .navbar__links.mobile-menu-full {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 84px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 70vw;
+    min-width: 160px;
+    color: #4c4b5b;
+  }
+
+  .fas.fa-times.gray {
+    color: #4c4b5b !important;
+  }
+
+
+  .mobile-menu-icon-fixed {
+    display: block;
+    z-index: 99999;
+    color: white !important;
+    margin-left: auto;
+  }
+
+  .navbar__links a {
+    height: auto;
+    min-height: 40px;
+    color: #4c4b5b !important;
+    place-items: start;
+  }
+  
+
+  .mobile-menu-container-items {
+    width: 70vw;
+    padding: 20px;
+  }
+
+  .mobile-menu-items {
+    border-bottom: 1px solid rgba(0,0,0,0.10);
+    margin-bottom: 20px;
+  }
+
+  .mobile-menu-items.top {
+    border-top: 1px solid rgba(0,0,0,0.10);
+    padding-top: 20px;
+  }
+
+  .mobile-menu-container-logo {
+    display: flex;
+    margin: 20px;
+    gap: 10px;
+    margin-top: -60px;
+    align-self: start;
+  }
+
+  .mobile-menu-container-logo img {
+    width: 210px !important;
+    height: 42px !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+  nav.fixed {
+    padding: 0;
+    padding-top: 60px;
+  }
+
+  .mobile-menu-icon-fixed i {
+    color: white !important;
+  }
+}
+
+@media (max-width: 400px) {
+  
+  nav.fixed img {
+    width: 190px;
+    height: 40px;
+  }
+  nav > img {
+    margin-left: 0px;
+  }
+  .mobile-menu-container-logo img {
+    width: 150px !important;
+    height: 35px !important;
+  }
+}

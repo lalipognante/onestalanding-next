@@ -1,0 +1,55 @@
+.bar {
+  height: 4px;
+  width: 85px;
+  background: #10338C;
+  margin: 0 auto 25px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden
+}
+
+.bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background: #ffff;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: MOVE-BG;
+  animation-name: MOVE-BG;
+}
+
+@-webkit-keyframes MOVE-BG {
+  0% {
+    -webkit-transform: translateX(0)
+  }
+
+  to {
+    -webkit-transform: translateX(85px)
+  }
+}
+
+@keyframes MOVE-BG {
+  0% {
+    transform: translateX(0)
+  }
+
+  to {
+    transform: translateX(85px)
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bar {
+    height: 3px;
+    margin: 0 auto 10px;
+  }
+
+}
