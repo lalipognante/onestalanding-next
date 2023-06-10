@@ -76,13 +76,7 @@ body {
 }
 
 body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+  background: #fff;
 }
 
 a {
@@ -1248,6 +1242,7 @@ section.areas-content {
   border: none;
   outline: none;
   padding: 0 20px;
+  background: #ffff;
 }
 
 .subscription .submit-email {
