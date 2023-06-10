@@ -1,29 +1,19 @@
 'use client';
 
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 export default function Subscribe() {
-  useEffect(() => {
-    const submitButton = document.querySelector('.submit-email');
-    const subscriptionForm = document.querySelector('.subscription');
+  const [isSubscribed, setIsSubscribed] = useState(false);
 
-    const handleMouseDown = (e) => {
-      e.preventDefault();
-      subscriptionForm.classList.add('done');
-    };
+  const handleButtonClick = () => {
+    setIsSubscribed(!isSubscribed);
+  };
 
-    submitButton.addEventListener('mousedown', handleMouseDown);
-
-    return () => {
-      // Limpiar el evento cuando el componente se desmonte
-      submitButton.removeEventListener('mousedown', handleMouseDown);
-    };
-  }, []);
   return (
     <div className="subscribe-container">
       <div className="subscribe-content">
-        <form className="subscription">
+        <form className={`subscription ${isSubscribed ? 'done' : ''}`}>
           <input className="add-email" type="email" placeholder="subscribe@me.now" />
-            <button className="submit-email" type="button">
+            <button className="submit-email" type="button" onClick={handleButtonClick}>
               <span className="before-submit">Subscribe</span>
               <span className="after-submit">Thank you for subscribing!</span>
             </button>
