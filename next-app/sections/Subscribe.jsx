@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 export default function Subscribe() {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [email, setEmail] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   async function handleButtonClick() {
     if (email.trim() === '') {
@@ -11,6 +12,7 @@ export default function Subscribe() {
     }
 
     try {
+      setIsLoading(true);
       // Realiza una solicitud POST a la API de contact
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -46,8 +48,10 @@ export default function Subscribe() {
             onChange={handleEmailChange}
           />
           <button className="submit-email" type="button" onClick={handleButtonClick}>
-            <span className="before-submit">Subscribe</span>
-            <span className="after-submit">Thank you for subscribing!</span>
+            <span className="before-submit">
+              {isLoading ? 'Enviando..' : 'Subscribirse'}
+            </span>
+            <span className="after-submit">Subscripción enviada!</span>
           </button>
         </form>
       </div>
