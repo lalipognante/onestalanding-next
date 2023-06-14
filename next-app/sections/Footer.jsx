@@ -63,11 +63,11 @@ function Footer() {
           <div className="legal">
             <span> © 2023 All rights reserved </span>
           </div>
-          <div className="links">
+          {/* <div className="links">
             <a className="fa-brands fa-github"></a>
             <a className="fa-brands fa-linkedin"></a>
             <a className="fa-brands fa-docker"></a>
-          </div>
+          </div> */}
         </footer>
       </section>
     </div>
