@@ -1530,6 +1530,15 @@ section.areas-content {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
+  color: #363f4d;
+}
+
+.fa-brands.fa-linkedin {
+  color: #363f4d;
+}
+
+.fa.fa-envelope {
+  color: #363f4d;
 }
 
 /* END TEAM MEMBERS */
