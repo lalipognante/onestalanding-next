@@ -1,11 +1,8 @@
 'use client';
 
-import logoBlanco from "../public/logoBlanco.png";
-import logoAzul from "../public/logoMasChicoAzul.png";
 import { useEffect, useState } from "react";
 import ContactButton from "./ContactButton";
-// import ContactButton from "../contact-button/ContactButton";
-import Image from 'next/image';
+import Image from "next/image";
 
 export const Navbar = () => {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
@@ -13,7 +10,9 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const scroll =
+        (document.documentElement && document.documentElement.scrollTop) ||
+        document.body.scrollTop;
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
 
@@ -24,43 +23,55 @@ export const Navbar = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-//   const sections = document.querySelectorAll("section");
-//   const navLinks = document.querySelectorAll("nav a");
+  useEffect(() => {
+    const handleScroll = () => {
+      const { pageYOffset } = window;
 
-//   const resetLinks = () => {
-//     navLinks.forEach((link) => link.classList.remove("active"));
-//   };
+      if (typeof document !== "undefined") {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav a");
 
-//   const handleScroll = () => {
-//     const { pageYOffset } = window;
+        const resetLinks = () => {
+          navLinks.forEach((link) => link.classList.remove("active"));
+        };
 
-//     sections.forEach((section) => {
-//       const { id, offsetTop, clientHeight } = section;
-//       const offset = offsetTop - 1;
+        sections.forEach((section) => {
+          const { id, offsetTop, clientHeight } = section;
+          const offset = offsetTop - 1;
 
-//       if (pageYOffset >= offset && pageYOffset < offset + clientHeight) {
-//         resetLinks();
-//         navLinks.forEach((link) => {
-//           if (link.dataset.scroll === id) {
-//             link.classList.add("active");
-//           }
-//         });
-//       }
-//     });
-//   };
+          if (pageYOffset >= offset && pageYOffset < offset + clientHeight) {
+            resetLinks();
+            navLinks.forEach((link) => {
+              if (link.dataset.scroll === id) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      }
+    };
 
-//   document.addEventListener("scroll", handleScroll);
+    if (typeof document !== "undefined") {
+      document.addEventListener("scroll", handleScroll);
+
+      return () => {
+        document.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, []);
 
   return (
     <>
@@ -71,7 +82,6 @@ export const Navbar = () => {
           height={35}
           src={isNavbarVisible ? "/logoBlanco.png" : "/logoMasChicoAzul.png"}
         />
-        {/* <img src={isNavbarVisible ? logoBlanco : logoAzul} alt="Logo de mi sitio web"/> */}
         <div className={`nav-items ${isMobileMenuOpen ? "mobile-menu" : ""}`}>
           <a data-scroll="home" href="#home" className="active">HOME</a>
           <a data-scroll="servicies" href="#servicies">QUE HACEMOS</a>

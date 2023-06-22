@@ -389,6 +389,10 @@ header .navbar__links>.active-fixed {
   font-size: 16px;
 }
 
+.active-fixed.active {
+  color: #fff;
+}
+
 /* .navbar__links  a:hover {
   color: #6b63ff;
 } */

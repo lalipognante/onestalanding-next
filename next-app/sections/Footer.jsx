@@ -20,11 +20,11 @@ function Footer() {
           <div className="links">
             <div>
               <h2>Links</h2>
-              <a>Home</a>
-              <a>Que hacemos</a>
-              <a>Relevancia del Compliance</a>
-              <a>Quienes somos</a>
-              <a>Contactanos</a>
+              <a data-scroll="home" href="#home">Home</a>
+              <a data-scroll="servicies" href="#servicies">Que hacemos</a>
+              <a data-scroll="areas" href="#areas">Areas</a>
+              <a data-scroll="team" href="#team">Quienes somos</a>
+              <a data-scroll="contact" href="#contact">Contactanos</a>
             </div>
             <div>
               <h2>Estemos en contacto </h2>
