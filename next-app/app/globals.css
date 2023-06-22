@@ -1361,12 +1361,20 @@ section.areas-content {
 
 /* TEAM MEMBER CARD */
 .pro-pic {
-  background-image: url("../public/persona2(1).jpg");
   background-size: cover;
   background-position: center center;
   width: 250px;
   height: 386px;
   border-radius: 24px 40px 24px 80px;
+}
+.pro-pic.person1 {
+  background-image: url("../public/gabrielPognante.png");
+}
+.pro-pic.person2 {
+  background-image: url("../public/federicoAlfaro.png");
+}
+.pro-pic.person3 {
+  background-image: url("../public/mariaElisaJaramillo.png");
 }
 .column{
 	flex: 0 0 40%;
@@ -1446,8 +1454,21 @@ section.areas-content {
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	background-position: inherit;
+	/* background-position: inherit; */
 }
+
+.team-card:hover .pro-pic.person3 {
+	transform:translate(-50%,-70%);
+}
+
+.team-card.person3:hover .desciption-wrap{
+	padding:48px 6px;
+}
+
+.team-card.person3:hover .desciption-wrap .description{
+  font-size: 13px;
+}
+
 
 .team-card:hover .description{
 	transform:translateY(0%);
@@ -1539,6 +1560,12 @@ section.areas-content {
 
 .fa.fa-envelope {
   color: #363f4d;
+}
+
+@media (width < 660px) {
+  .team-content {
+    gap: 120px;
+  }
 }
 
 /* END TEAM MEMBERS */

@@ -3,17 +3,14 @@ export default function TeamCard({ card }) {
   return (
     <div className="team-member-container">
       <div className="team-card-container">
-        {/* <div className="team-card"></div> */}
-        <div className="team-card">
-          <div className="pro-pic"></div>
+        <div className={`team-card person${card.id}`}>
+          <div className={`pro-pic person${card.id}`}></div>
           <div className="desciption-wrap">
             <div className="description">
               <ul>
-                <li>Abogado (U.C.C)</li>
-                <li>Especialista en Derecho Penal Económico (U.B.P)</li>
-                <li>Diplomado en Crimen Organizado, Corrupción y Terrorismo (Univ. De Salamanca, España)</li>
-                <li>Programa en Compliance y Prevención de la Corrupción Corporativa (Univ. S21)</li>
-                <li>Certificación Internacional en Ética y Compliance (AAEC)</li>
+                {card.curriculum.map((cv, index) => (
+                  <li key={index}>{cv}</li>
+                ))}
               </ul>
             </div>
           </div>
