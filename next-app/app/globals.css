@@ -1460,20 +1460,13 @@ section.areas-content {
 	border-radius: 50%;
 	/* background-position: inherit; */
 }
-
-.team-card:hover .pro-pic.person3 {
-	transform:translate(-50%,-70%);
-}
-
 .team-card.person3:hover .desciption-wrap{
-	padding:48px 6px;
+  padding: 78px 2px;
 }
 
-.team-card.person3:hover .desciption-wrap .description{
-  font-size: 13px;
+.team-card.person2:hover .desciption-wrap {
+  padding: 90px 11px;
 }
-
-
 .team-card:hover .description{
 	transform:translateY(0%);
 	opacity: 1;
