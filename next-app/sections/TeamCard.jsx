@@ -24,8 +24,7 @@ export default function TeamCard({ card }) {
         {card?.position}
       </div>
       <div className='team-member-contact'>
-        <a className="fa-brands fa-linkedin"></a>
-        <a className="fa fa-envelope"></a>
+        <a href={card?.linkedin} target="_blank" rel="noopener noreferrer" className="fa-brands fa-linkedin"></a>
       </div>
     </div>
   )

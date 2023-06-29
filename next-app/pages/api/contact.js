@@ -7,15 +7,15 @@ export default async (req, res) => {
     port: 465,
     secure: true,
     auth: {
-      user: 'lalipognante@gmail.com',
-      pass: 'lzmgygifpqtlqdnd'
+      user: 'onestacompliance@gmail.com',
+      pass: 'ahtldqqxgvqkspxa'
     }
   })
 
   try {
     const emailRes = await transporter.sendMail({
       from: email,
-      to: 'lalipognante@gmail.com',
+      to: 'onestacompliance@gmail.com',
       subject: 'Nuevo subscriptor desde la web de ONESTÁ',
       html: `<p>Tienes un nuevo subscriptor desde la web de ONESTÁ  <br/> Su email es: ${email} <br/> Ponte en contacto ! </p>`
     });

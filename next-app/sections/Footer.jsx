@@ -36,7 +36,7 @@ function Footer() {
                   height={20}
                   src={site}
                 />
-                <a>Barrio Alto Alberdi, Córdoba Argentina</a>
+                <a>Córdoba, Argentina</a>
               </div>
               <div style={{ display: 'flex', gap: '5px'}}>
               <Image
@@ -45,7 +45,7 @@ function Footer() {
                   src={telephone}
                 />
                 {/* <img src={telephone}  width={20} height={20}/> */}
-                <a>+54 (0351) 4807456</a>
+                <a>+54 (0351) 5169365</a>
               </div>
               <div style={{ display: 'flex', gap: '5px'}}>
                 <Image
@@ -54,7 +54,7 @@ function Footer() {
                   src={email}
                 />
                 {/* <img src={email}  width={20} height={20}/> */}
-                <a>info@onesta.com</a>
+                <a>onestacompliance@gmail.com</a>
               </div>
             </div>
           </div>
