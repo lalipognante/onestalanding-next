@@ -15,12 +15,13 @@ export const TeamMembers = () => {
         "Diplomado en Crimen Organizado, Corrupción y Terrorismo (Univ. De Salamanca, España)",
         "Programa en Compliance y Prevención de la Corrupción Corporativa (Univ. S21)",
         "Certificación Internacional en Ética y Compliance (AAEC)"
-      ]
+      ],
+      linkedin: "https://www.linkedin.com/in/gabriel-pognante-329910165/"
     },
     {
       id: 2,
       name: 'Federico Alfaro',
-      position: 'Abogado',
+      position: 'Derecho Empresarial',
       // icon: icon2
       curriculum: [
         "Abogado (U.B.A)",
@@ -28,12 +29,13 @@ export const TeamMembers = () => {
         "MBA en Gestión y Dirección de Organizaciones (U.B.P)",
         "Diplomado en Métodos Alternativos de Resolución de Conflictos",
         "Con más de 10 años de trayectoria como abogado independiente en el área civil, comercial y empresarial."
-      ]
+      ],
+      linkedin: "https://www.linkedin.com/in/federico-alfaro-seghieri-52a5701a9/"
     },
     {
       id: 3,
       name: 'Maria Elisa Jaramillo',
-      position: 'Abogada',
+      position: 'Propiedad Intelectual y Datos Personales',
       // icon: icon3
       curriculum: [
         "Abogada (UHE)",
@@ -42,7 +44,8 @@ export const TeamMembers = () => {
         "Más de 4 años de trayectoria como abogada en Ecuador en las áreas corporativa e inmobiliario",
         "2 años como abogada en Argentina en las áreas civil y empresarial",
         "Certificada con nivel B2 de inglés (Cambridge)"
-      ]
+      ],
+      linkedin: "https://www.linkedin.com/in/maria-elisa-jaramillo-salazar-73524b264/"
     }
   ]
   return (
