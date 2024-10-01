@@ -1372,14 +1372,45 @@ section.areas-content {
   border-radius: 24px 40px 24px 80px;
 }
 .pro-pic.person1 {
-  background-image: url("../public/gabrielPognante.png");
+  background-image: url("../public/gabrielPognante.jpg");
 }
+
 .pro-pic.person2 {
-  background-image: url("../public/federicoAlfaro.png");
+  background-image: url("../public/juanAraoz.jpg");
 }
+
 .pro-pic.person3 {
-  background-image: url("../public/mariaElisaJaramillo.png");
+  background-image: url("../public/agustinPascualini.jpg");
 }
+
+.pro-pic.person4 {
+  background-image: url("../public/edgardoRuibal.jpg");
+}
+
+.pro-pic.person5 {
+  background-image: url("../public/federicoAlfaro.jpg");
+}
+
+.pro-pic.person6 {
+  background-image: url("../public/constanzaZucchella.jpg");
+}
+
+.pro-pic.person7 {
+  background-image: url("../public/concepcionBonetto.jpg");
+}
+
+.pro-pic.person8 {
+  background-image: url("../public/leonardoJavierMazzei.jpg");
+}
+
+.pro-pic.person9 {
+  background-image: url("../public/florenciaEscribano.jpg");
+}
+
+.pro-pic.person10 {
+  background-image: url("../public/florenciamarquezbonino.jpg");
+}
+
 .column{
 	flex: 0 0 40%;
 }
@@ -1402,6 +1433,7 @@ section.areas-content {
 	padding:82px 6px;
 	position: relative;
 	overflow:hidden;
+  
 }
 .team-card .description{
 	text-align: start;
@@ -1423,6 +1455,8 @@ section.areas-content {
 }
 .team-card .description > *{
 	width: 100%;
+  overflow: hidden;
+
 }
 .team-card .description h3{
 	margin: 0;
@@ -1434,6 +1468,7 @@ section.areas-content {
 
 .team-card .description ul{
 	padding-left: 29px;
+  overflow: hidden;
 }
 
 .team-member-contact {
@@ -1460,16 +1495,51 @@ section.areas-content {
 	border-radius: 50%;
 	/* background-position: inherit; */
 }
+
+.team-card.person1:hover .desciption-wrap{
+  padding: 0;
+  overflow-y: scroll;
+  transform:translate(0%,35%);
+  height: 260px;
+  box-sizing: border-box; 
+
+}
+
+.team-card.person6:hover .desciption-wrap{
+  padding: 0;
+  overflow-y: scroll;
+  transform:translate(0%,35%);
+  height: 260px;
+  box-sizing: border-box; 
+
+}
+
+
+.team-card.person10:hover .desciption-wrap{
+  padding: 0;
+  overflow-y: scroll;
+  transform:translate(0%,35%);
+  height: 260px;
+  box-sizing: border-box; 
+
+}
+
+
 .team-card.person3:hover .desciption-wrap{
   padding: 78px 2px;
+  overflow: hidden;
+
 }
 
 .team-card.person2:hover .desciption-wrap {
   padding: 90px 11px;
+  overflow: hidden;
 }
 .team-card:hover .description{
 	transform:translateY(0%);
 	opacity: 1;
+  overflow: hidden;
+
 }
 /* END TEAM MEMBER CARD */
 
