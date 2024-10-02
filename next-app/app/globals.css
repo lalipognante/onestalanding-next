@@ -1497,7 +1497,7 @@ section.areas-content {
 }
 
 .team-card.person1:hover .desciption-wrap{
-  padding: 0;
+  padding: 0px 2px;
   overflow-y: scroll;
   transform:translate(0%,35%);
   height: 260px;
@@ -1516,19 +1516,20 @@ section.areas-content {
 
 
 .team-card.person10:hover .desciption-wrap{
-  padding: 0;
+  padding: 0px 2px;
   overflow-y: scroll;
   transform:translate(0%,35%);
   height: 260px;
   box-sizing: border-box; 
+  
 
 }
 
 
-.team-card.person3:hover .desciption-wrap{
+
+.team-card.person3:hover .desciption-wrap {
   padding: 78px 2px;
   overflow: hidden;
-
 }
 
 .team-card.person2:hover .desciption-wrap {
@@ -1612,6 +1613,10 @@ section.areas-content {
   font-size: 25px;
   line-height: 34px;
   color: #363F4D;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;     /* Vertical centering */
+  text-align: center;      /* Ensures text inside is centered */
 }
 
 .team-member-position {
