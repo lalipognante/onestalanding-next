@@ -17,7 +17,7 @@ export const Details = () => {
                   src="/manosLogo2.png"
                 />
               </div>
-              <h4 className='title details'>RELEVANIA DEL COMPLIANCE</h4>
+              <h4 className='title details'>RELEVANCIA DEL COMPLIANCE</h4>
               <h1 className='subtitle blue details' >COMPLIANCE</h1>
               <Bar />
               <p className='text details'>
