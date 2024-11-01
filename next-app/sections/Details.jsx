@@ -17,14 +17,14 @@ export const Details = () => {
                   src="/manosLogo2.png"
                 />
               </div>
-              <h4 className='title details'>RELEVANIA DEL COMPLIANCE</h4>
+              <h4 className='title details'>RELEVANCIA DEL COMPLIANCE</h4>
               <h1 className='subtitle blue details' >COMPLIANCE</h1>
               <Bar />
               <p className='text details'>
-                En la Argentina, al igual de lo que sucede en los principales países de la región resulta necesaria la observación y el cumplimiento de la Ley Nacional 27.401 de Responsabilidad Penal de las Personas Jurídicas por Delitos de Corrupción, que permitirá mitigar el riesgo de la comisión de delitos y eximir de responsabilidad a la persona jurídica si actúa diligentemente y en cumplimiento de los postulados.
+                En Argentina, al igual que en los principales países de la región, resulta esencial observar y cumplir con la Ley Nacional 27.401 de Responsabilidad Penal de las Personas Jurídicas por Delitos de Corrupción. Esta normativa permite mitigar el riesgo de comisión de delitos y eximir de responsabilidad a la persona jurídica que actúe con diligencia y en conformidad con sus disposiciones.
               </p>
               <p className='text details'>
-                Es por ello que para poder prevenir y evitar futuras consecuencias más gravosas ha tomado relevancia la función de “Compliance”
+                Por ello, la función de 'Compliance' ha cobrado relevancia para prevenir y evitar consecuencias más gravosas en el futuro.
               </p>
             </div>
           </div>

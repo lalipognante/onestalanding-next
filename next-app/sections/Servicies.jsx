@@ -37,7 +37,7 @@ export const Services = () => {
       id: 3,
       title: 'Programas de Integridad',
       icon: icon3,
-      description: 'Diseño e implementación de programas de integridad a medida de las características de la empresa, cuyo cumplimiento permitirá minimizar los riesgos detectados.',
+      description: 'Diseño e implementación de programas adaptados a las características particulares de la empresa, cuyo cumplimiento permitirá minimizar los riesgos identificados.',
       showLearnMore: true,
       itemsBackSide: [
         'Diseño o renovación de código de ética',
