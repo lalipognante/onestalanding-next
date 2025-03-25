@@ -20,7 +20,7 @@ export const TeamMembers = () => {
       ],
       linkedin: "https://www.linkedin.com/in/gabriel-pognante-329910165/"
     },
-    {
+    /*{
       id: 2,
       name: 'Juan Manuel Aráoz',
       position: 'ASOCIADO',
@@ -33,7 +33,7 @@ export const TeamMembers = () => {
         "Experto en Prevención de la Corrupción"
       ],
       linkedin: "https://www.linkedin.com/in/juan-manuel-araoz-2467a44a/" 
-    },
+    },*/
     {
       id: 3,
       name: 'Agustín Pascualini',
