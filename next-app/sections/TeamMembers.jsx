@@ -108,6 +108,7 @@ export const TeamMembers = () => {
       ],
       linkedin: "https://www.linkedin.com/in/leonardo-mazzei-6ba06814a/" 
     },
+    /*
     {
       id: 9,
       name: 'Florencia Escribano',
@@ -120,6 +121,7 @@ export const TeamMembers = () => {
       ],
       linkedin: "https://www.linkedin.com/in/florencia-escribano-55465aa7/" 
     },
+    */
     {
       id: 10,
       name: 'Florencia Luz Márquez Bonino',
