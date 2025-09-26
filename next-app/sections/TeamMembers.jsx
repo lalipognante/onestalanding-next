@@ -94,34 +94,6 @@ export const TeamMembers = () => {
       ],
       linkedin: "https://www.linkedin.com/in/concepcion-bonetto-4864471ba/" 
     },
-    /*
-    {
-      id: 8,
-      name: 'Leonardo Javier Mazzei',
-      position: 'ASOCIADO',
-      curriculum: [
-        "Abogado (UBA)",
-        "MBA – Administración y Gestión de las Organizaciones (UBP)",
-        "Maestría en Derecho Empresario (UBP)",
-        "Diplomatura en Medios Alternativos de Resolución de Conflictos (UBP)",
-        "Programa Universitario en Finanzas (UADE)",
-        "Programa en Gestión del Cliente Pyme (UBP)"
-      ],
-      linkedin: "https://www.linkedin.com/in/leonardo-mazzei-6ba06814a/" 
-    },
-    {
-      id: 9,
-      name: 'Florencia Escribano',
-      position: 'ASOCIADA',
-      curriculum: [
-        "Abogada (UNC)",
-        "Maestría en Derecho y Argumentación (UNC)",
-        "Diplomatura en Derecho de los Negocios Inmobiliarios (UNC)",
-        "Diplomatura en Derecho de Daños y Responsabilidad Civil (UNC)"
-      ],
-      linkedin: "https://www.linkedin.com/in/florencia-escribano-55465aa7/" 
-    },
-    */
     {
       id: 10,
       name: 'Florencia Luz Márquez Bonino',
