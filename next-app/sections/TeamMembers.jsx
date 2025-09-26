@@ -94,6 +94,7 @@ export const TeamMembers = () => {
       ],
       linkedin: "https://www.linkedin.com/in/concepcion-bonetto-4864471ba/" 
     },
+    /*
     {
       id: 8,
       name: 'Leonardo Javier Mazzei',
@@ -108,7 +109,6 @@ export const TeamMembers = () => {
       ],
       linkedin: "https://www.linkedin.com/in/leonardo-mazzei-6ba06814a/" 
     },
-    /*
     {
       id: 9,
       name: 'Florencia Escribano',
